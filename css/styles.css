@@ -1,0 +1,284 @@
+
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    background-color: hsl(270, 20%, 96%);
+
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0px;
+    min-width: 100vw;
+    min-height: 100vh;
+
+
+}
+
+
+
+
+.background__form{
+    width: 450px;
+    height: 650px;
+    border-radius: 0px 0px 230px 230px;
+    background: linear-gradient(180deg,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+.background__form--right{
+    width: 350px;
+    background: hsla(289, 100%, 72%, 0.048) ;
+    position: absolute;
+    border-radius: 280px 0px 0px 0px;
+    left: calc(100% - 350px);
+    top: calc(100% - 650px);
+    
+}
+
+@media screen and (max-width: 1024px) {
+    main{
+        flex-direction: column ;
+    }
+
+    .background__form{
+        width: 50%;
+        border-radius: 0px 0px 330px 0px;
+        
+    }
+    .background__form--right{
+        
+        border-radius: 280px 0px 0px 0px;
+        top: 100%;
+        left: 50%
+        
+    }
+
+    .container__phone{
+        margin-top: 100px;
+    }
+
+    
+}
+
+
+h1{
+    color: hsl(271, 36%, 24%);
+    font-size: 2.5rem;
+}
+
+p{
+    color:hsl(270, 7%, 64%);
+    font-size: 1.1rem;
+}
+
+/* Phone Container */
+
+h2{
+    color: hsl(274, 50%, 95%);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 0;
+    margin-bottom: 20px;
+}
+
+h3{
+    color: hsl(276, 100%, 81%);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 0;
+}
+
+
+
+.container__phone{
+    background-color: hsl(270, 20%, 96%);
+    width: 300px;
+    height: 630px;
+    
+    border: 10px solid white;
+    border-radius: 40px;
+}
+.phone__header{
+    background: linear-gradient(270deg,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    position: relative;
+    border-radius:30px 30px 8px 8px;
+    
+    height: 70px;
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px 0px 15px;
+    
+}
+
+.phone__header i{
+    color: hsl(276, 100%, 81%);
+    
+}
+
+.header__form{
+    background-color: white;
+    height: 26px;
+    width: 180px;
+    position: absolute;
+    border-radius: 70px;
+    left: calc(50% - 90px);
+    top: -10px;
+}
+
+
+.header__text{
+    flex: 1;
+}
+.phone__header img{
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 30px;
+    margin-right: 12px;
+    margin-left: 12px;
+    
+}
+
+/* Phone__text Section */
+
+.phone__text{
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 40px;
+    
+}
+
+
+.text__container{
+
+    max-width: 157px;
+    font-size: 11px;
+    margin: 10px 15px;
+
+    padding: 10px;
+    border-radius: 15px;
+    
+    line-height: 1.4;
+}
+
+
+.text__container--moderateviolet{
+    color: hsl(276, 55%, 52%);
+    background-color: hsla(289, 100%, 72%, 0.082) ;
+    
+    
+}
+
+.text__container--darkviolet{
+    color: hsl(271, 15%, 43%);
+    background-color: white;
+    position: relative;
+    left: calc(100% - 205px);
+}
+
+.text__container img{
+    width: 50px;
+}
+
+.text__container--images{
+   text-align: right;
+   margin-right: 10px;
+    
+}
+.text__container--images img{
+    border-radius: 10px;
+    margin: 4px;
+    width: 50px;
+    
+}
+.text__container--gradient{
+    background: linear-gradient(90deg,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    border-radius: 10px 10px 10px 5px;
+    color: rgba(255, 255, 255, 0.664);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    
+
+}
+
+.text__container--gradient i{
+    color: hsl(289, 100%, 72%);
+    margin-right: 10px;
+
+}
+
+.price__text{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.596);
+    flex: 1;
+
+}
+
+.price__value{
+    margin: 0;
+    color: rgba(255, 255, 255, 0.877);
+    font-size: 14px;
+    margin-right: 10px;
+    
+}
+
+
+
+.placeholder__container{
+    background-color: white;
+    border-radius: 50px;
+    padding: 5px 15px;
+    
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.placeholder__container p{
+    color: hsl(206, 6%, 79%);
+    font-size: 12px;
+}
+
+.placeholder__container i{
+    color: hsl(271, 36%, 24%);
+    transform: scale(0.8);
+    
+}
+
+
+
+
+
+/* Container Information Section */
+
+.container__information{
+    max-width: 500px;
+    line-height: 2;
+    margin-left: 150px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container__information{
+        margin-top:20%;
+        text-align: center;
+        padding: 0 10%;
+        margin-left: 0;
+    }
+    
+
+    }
